@@ -1,0 +1,20 @@
+https://www.techiedelight.com/find-occurrences-of-substring-string-java/
+
+
+
+
+To find occurences of tring in java
+	String text = "AABBFFBDDUFJJAA", str = "AA";
+		while (true) {
+			index = text.indexOf(str, index);
+			if (index != -1) {
+				count++;
+				index += str.length();
+			} else {
+				break;
+			}
+		}
+		
+	Explanation : indexOf method return -1 when it doesn't find a match. here we are assigning the index variable 
+	Index = test.indexOf(String, fromThisPosition);
+	so it return a zero when no match is found 

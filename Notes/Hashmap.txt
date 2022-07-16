@@ -1,0 +1,10 @@
+To add a value or increment in java 
+
+HashMap<Character, Integer> hashmap = new HashMap<Character, Integer>();
+
+				if (hashmap.containsKey(key)) {
+					hashmap.put(key, hashmap.get(key) + value);
+				} else {
+					hashmap.put(key, value);
+				}
+				
